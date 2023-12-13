@@ -1,0 +1,43 @@
+{{ define "main" }}
+  {{ .Content }}
+<!--{{ $var := slice 1 2 3 }}-->
+<!--{{ range $var }}-->
+<!--  {{.}}-->
+<!--{{ end }}-->
+<!--===<br>-->
+{{ with site.GetPage "projects" }}
+<!--    {{jsonify (dict "indent" " ") (.Resources.ByType "page")}}-->
+  {{ range (.Resources.ByType "page") }}
+    <!-- Title -->
+    <h2>{{.Title}}</h2>
+
+    <!--  Visuals  -->
+    <div class="project-cover">
+        <img src="/{{ .SectionsPath }}/cover.jpg" class="hover-1" />
+        <video autoplay="" loop="" muted="" playsinline="" class="hover-2" >
+            <source src="/{{ .SectionsPath }}/cover.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    {{jsonify (dict "indent" " ") .}}
+
+    <!--  Authors  -->
+    {{ range $index, $element := .Params.Authors }}
+      {{ if gt $index 0}},{{end}}{{ . }}
+    {{ end }}
+
+    <!--  Description  -->
+    {{.Content}}
+
+    <!--  Links  -->
+    {{ range $index, $element := .Params.Links }}
+        <a href="{{.url}}">{{.name}}</a>
+    {{ end }}
+  {{end}}
+{{end}}
+<!--  {{ range site.RegularPages }}-->
+<!--    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>-->
+<!--    {{ .Summary }}-->
+<!--  {{ end }}-->
+{{ end }}

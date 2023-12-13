@@ -1,0 +1,88 @@
+<section id="about" class="section section-about">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4">
+        <div class="profile-picture has-text-right-desktop has-text-centered-mobile">
+          <div class="profile-picture-column">
+            <img src="images/profile.jpg" />
+            <div id="social-media-icons">
+              {{ $social_icons := resources.Get "minima-social-icons.svg" }}
+              <a href="mailto:tobias.kirschstein@tum.de">
+                <div class="tooltip"><span class="tooltiptext">Mail</span>
+                  <svg class=svg-icon width="32" height="32">
+                    <use xlink:href="{{$social_icons.Permalink}}#email"></use>
+                  </svg>
+                </div>
+              </a>
+              <!--          <a href="" target="_blank">-->
+              <!--            <div class="tooltip"><span class="tooltiptext">CV</span>-->
+              <!--              <svg class="svg-icon" width="32" height="32">-->
+              <!--                <use xlink:href="{{$social_icons.Permalink}}#resume"></use>-->
+              <!--              </svg>-->
+              <!--            </div>-->
+              <!--          </a>-->
+              <a href="https://scholar.google.com/citations?user=rri0OT0AAAAJ" target="_blank">
+                <div class="tooltip"><span class="tooltiptext">Google&nbsp;Scholar</span>
+                  <svg class="svg-icon" width="32" height="32">
+                    <use xlink:href="{{$social_icons.Permalink}}#googlescholar"></use>
+                  </svg>
+                </div>
+              </a>
+              <a href="https://github.com/tobias-kirschstein" target="_blank">
+                <div class="tooltip"><span class="tooltiptext">GitHub</span>
+                  <svg class="svg-icon" width="32" height="32">
+                    <use xlink:href="{{$social_icons.Permalink}}#github"></use>
+                  </svg>
+                </div>
+              </a>
+              <a href="https://twitter.com/TobiasKirschst1" target="_blank">
+                <div class="tooltip"><span class="tooltiptext">Twitter</span>
+                  <svg class="svg-icon" width="32" height="32">
+                    <use xlink:href="{{$social_icons.Permalink}}#twitter"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      <div class="column">
+        <h1 class="title-me">Tobias Kirschstein</h1>
+        PhD Student, Technical University of Munich
+        <br /><br />
+        <h2>About Me</h2>
+        I am a PhD student in the <a href="https://niessnerlab.org/" target="_blank">Visual Computing & Artificial Intelligence Group</a> at the Technical University of Munich, supervised by <a href="https://niessnerlab.org/members/matthias_niessner/profile.html" target="_blank">Prof. Matthias Nießner</a>.
+        <br /><br />
+        I am the builder and maintainer of the <a href="https://tobias-kirschstein.github.io/nersemble/" target="_blank">NeRSemble dataset</a>, for which I built a custom multi-view setup with 16 video cameras and recorded facial expressions of over 250 individuals.
+        Since its release, the dataset has enabled various research projects around 3D head avatars.<a data-target="modal-nersemble-citations" class="js-modal-trigger"><sup>1</sup></a>
+        <br /><br />
+        Before starting my PhD, I completed a M.Sc. degree in Informatics at TU Munich with my Master’s Thesis focusing on Neural Rendering for novel-view synthesis on outdoor scenes using sparse point clouds.
+        I obtained a B.Sc. degree in both Mathematics and Computer Science at the University of Passau where I studied how Deep Learning can be used for emotion recognition from physiological signals under the supervision of <a href="http://www.schuller.one/" target="_blank">Prof. Björn Schuller</a>.
+        <br /><br />
+        My current research interests lie in Neural Rendering, 3D Scene Representations, Dynamic 3D Reconstruction and Animatable 3D Head Avatars.
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="modal-nersemble-citations" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">NeRSemble dataset</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      Selection of projects building on the NeRSemble dataset:
+      <ul>
+        <li><a href="https://yuelangx.github.io/gaussianheadavatar/" target="_blank">Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians</a></li>
+        <li><a href="https://tobias-kirschstein.github.io/diffusion-avatars/" target="_blank"> Diffusion Avatars: Deferred Diffusion for High-fidelity 3D Head Avatars </a></li>
+        <li><a href="https://shenhanqian.github.io/gaussian-avatars" target="_blank">GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians</a></li>
+      </ul>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button">Close</button>
+    </footer>
+  </div>
+</div>
