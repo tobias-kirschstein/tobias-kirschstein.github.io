@@ -296,14 +296,16 @@ div.publication {
     margin-left: -5px;
 }
 
+.publication-link {
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
 .publication-links a {
     position: relative;
     display: inline-block;
-    margin-bottom: 5px;
     height: 30px;
     line-height: 28px;
-    margin-left: 15px;
-    margin-right: 15px;
     padding: 0 10px;
     background-color: #0065bd;
     color: #fff;
@@ -311,11 +313,11 @@ div.publication {
     transition: all 0.3s;
 }
 
-.publication-links a:before {
+.publication-link:before {
     content: '';
     display: inline-block;
-    position: absolute;
-    left: -10px;
+    position: relative;
+    z-index: 1;
     height: 0;
     border-right: 10px solid #0065bd;
     border-top: 15px solid transparent;
@@ -324,10 +326,10 @@ div.publication {
     transition: all 0.3s;
 }
 
-.publication-links a:after {
+.publication-link:after {
     content: '';
-    position: absolute;
-    right: -10px;
+    position: relative;
+    z-index: 1;
     display: inline-block;
     height: 0;
     border-left: 10px solid #0065bd;
@@ -337,18 +339,18 @@ div.publication {
     transition: all 0.3s;
 }
 
-.publication-links a:hover {
+.publication-link:hover a {
     /*background-color: #000;*/
     background-color: #F06D89;
     color: #000;
 }
 
-.publication-links a:hover:before {
+.publication-link:hover:before {
     /*border-right-color: #000;*/
     border-right-color: #F06D89;
 }
 
-.publication-links a:hover:after {
+.publication-link:hover:after {
     /*border-left-color: #000;*/
     border-left-color: #F06D89;
 }

@@ -52,11 +52,11 @@
           <!--  Links  -->
           <div class="publication-links">
             {{ range $index, $element := .Params.Links }}
-            <a href="{{.url}}" target="_blank">{{.name}}</a>
+            <span class="publication-link"><a href="{{.url}}" target="_blank">{{.name}}</a></span>
             {{ end }}
             <!--  BibTeX  -->
             {{ if .Params.Bibtex }}
-            <a data-target="modal-bibtex-{{$slug}}" class="js-modal-trigger">Bibtex</a>
+            <span class="publication-link"><a data-target="modal-bibtex-{{$slug}}" class="js-modal-trigger">Bibtex</a></span>
             {{ end }}
           </div>
         </div>
