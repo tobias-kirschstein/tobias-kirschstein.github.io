@@ -313,6 +313,7 @@ div.publication {
     color: #fff;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: all 0.3s;
+    margin: 0 -1px;
 }
 
 .publication-link:before {
@@ -326,7 +327,7 @@ div.publication {
     border-bottom: 15px solid transparent;
     vertical-align: bottom;
     transition: all 0.3s;
-    box-shadow: 1px 0 0 #0065bd;
+    background-color: white;
 }
 
 .publication-link:after {
@@ -340,7 +341,7 @@ div.publication {
     border-bottom: 15px solid transparent;
     vertical-align: bottom;
     transition: all 0.3s;
-    box-shadow: -1px 0 0 #0065bd;
+    background-color: white;
 }
 
 .publication-link:hover a {
