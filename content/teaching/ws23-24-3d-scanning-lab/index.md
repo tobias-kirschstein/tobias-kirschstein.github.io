@@ -15,7 +15,7 @@ name = 'Intuitive Face Animation through Sparse Deformation Components'
 name = 'Multi-view Stereo via Inverse Rendering'
 
 [[projects]]
-name = 'Synthetic Hair Reconstruction'
+name = 'Synthetic 3D Hair Reconstruction'
 
 +++
 

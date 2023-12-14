@@ -15,7 +15,7 @@ name = 'Intuitive Speech-driven Face Animation'
 name = 'Reconstructing surfaces with NeuS and Deep Marching Tetrahedra'
 
 [[projects]]
-name = 'Multi-view Hair Reconstruction'
+name = 'Multi-view 3D Hair Reconstruction'
 
 +++
 

@@ -1,5 +1,5 @@
 +++
-title = ' Diffusion Avatars: Deferred Diffusion for High-fidelity 3D Head Avatars'
+title = ' DiffusionAvatars: Deferred Diffusion for High-fidelity 3D Head Avatars'
 conference = 'arXiv 2023'
 date = 2024-06-03
 authors = [ 'Tobias Kirschstein', 'Simon Giebenhain', 'Matthias Nießner' ]
