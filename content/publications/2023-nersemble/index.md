@@ -28,6 +28,6 @@ name = 'Dataset'
 url = 'https://forms.gle/rYRoGNh2ed51TDWX9'
 +++
 
-NeRSemble reconstructs high-fidelity dynamic-radiance fields of human heads.
-We combine a deformation for coarse movements with an ensemble of 3D multi-resolution hash encodings, which act as a form of expression dependent volumetric texture that models fine-grained, expression-dependent details.
+NeRSemble reconstructs high-fidelity dynamic radiance fields of human heads.
+We combine a deformation for coarse movements with an ensemble of 3D multi-resolution hash encodings. These act as a form of expression-dependent volumetric textures that model fine-grained, expression-dependent details.
 Additionally, we propose a new 16 camera multi-view capture dataset (7.1 MP resolution and 73 frames per second) containing 4700 sequences of more than 220 human subjects.
