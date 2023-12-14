@@ -10,7 +10,7 @@
       {{ with site.GetPage "reviewing" }}
       <!--          {{jsonify (dict "indent" " ") (.Resources.ByType "page")}}-->
       {{ range (.Resources.ByType "page") }}
-      <div class="review columns is-centered">
+      <div class="review columns is-centered is-mobile">
         <div class="column is-half-desktop">
           <!--  Title  -->
           <h3 class="review-title has-text-centered">
@@ -19,7 +19,7 @@
           <div class="reviewing-conference-name has-text-centered">{{.Params.Name}}</div>
 
           <!--  Projects  -->
-          <div class="columns is-centered">
+          <div class="columns is-centered is-mobile">
             <ul class="reviews column is-half">
               {{ range $index, $element := .Params.Reviews }}
               <li>{{.year}}: {{.text}}</li>
