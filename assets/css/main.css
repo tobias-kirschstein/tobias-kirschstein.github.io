@@ -49,6 +49,7 @@ li {
 }
 
 #navbar-main {
+    height: 70px;
     background: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     font-size: 16px;
@@ -63,6 +64,14 @@ li {
     padding: 0 24px;
 }
 
+#navbar-main .columns {
+    margin: 0;
+}
+
+#navbar-main .column {
+    padding: 0;
+}
+
 #navbar-main .section-links {
     vertical-align: bottom;
 }
@@ -72,6 +81,16 @@ li {
     line-height: 70px;
     margin-right: 10px;
     transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px), print {
+    #navbar-main a {
+        line-height: 20px;
+    }
+
+    #navbar-main .columns {
+        margin-top: 10px;
+    }
 }
 
 #navbar-main a:hover {
