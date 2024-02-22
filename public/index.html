@@ -12,7 +12,7 @@
 
 
 <link rel="stylesheet" href="/css/fontawesome.all.min.css" />
-      <link rel="stylesheet" href="/css/main.min.d6a36bbfba37fbb373858b814094e71a70cc648048c0430530e01fbdd41b8900.css" integrity="sha256-1qNrv7o3&#43;7NzhYuBQJTnGnDMZIBIwEMFMOAfvdQbiQA=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/main.min.ecd115d14e6a59a61722e58b19a7b298642267bdaaaeaa3f86444350a6d2e637.css" integrity="sha256-7NEV0U5qWaYXIuWLGaeymGQiZ72qrqo/hkRDUKbS5jc=" crossorigin="anonymous">
 
 
 
@@ -25,13 +25,19 @@
   <header>
     <div id="navbar-wrapper">
     <nav id="navbar-main">
-        <div class="container">
-            <a href="/" class="home-link">Tobias Kirschstein</a>
-            <span class="section-links">
-                <a href="#about" class="nav-link" data-target="#about">Home</a>
-                <a href="#publications" class="nav-link" data-target="#publications">Publications</a>
-                <a href="#teaching" class="nav-link" data-target="#teaching">Teaching</a>
-            </span>
+        <div class="container is-centered">
+            <div class="columns">
+                <div class="column is-narrow">
+                    <a href="/" class="home-link is-size-5-mobile">Tobias Kirschstein</a>
+                </div>
+                <div class="column">
+                    <span class="section-links">
+                        <a href="#about" class="nav-link" data-target="#about">Home</a>
+                        <a href="#publications" class="nav-link" data-target="#publications">Publications</a>
+                        <a href="#teaching" class="nav-link" data-target="#teaching">Teaching</a>
+                    </span>
+                </div>
+            </div>
         </div>
     </nav>
 </div>
@@ -45,7 +51,7 @@
       <div class="column is-4">
         <div class="profile-picture has-text-right-desktop has-text-centered-mobile">
           <div class="profile-picture-column">
-            <img src="images/profile.jpg" />
+            <img src="images/profile-512.jpg" style="width: 100%; max-width: 256px" />
             <div id="social-media-icons">
               
               <a href="mailto:tobias.kirschstein@tum.de">
@@ -55,13 +61,13 @@
                   </svg>
                 </div>
               </a>
-              
-              
-              
-              
-              
-              
-              
+              <a href="CV.pdf" target="_blank">
+                <div class="tooltip"><span class="tooltiptext">CV</span>
+                  <svg class="svg-icon" width="32" height="32">
+                    <use xlink:href="https://example.org/minima-social-icons.svg#resume"></use>
+                  </svg>
+                </div>
+              </a>
               <a href="https://scholar.google.com/citations?user=rri0OT0AAAAJ" target="_blank">
                 <div class="tooltip"><span class="tooltiptext">Google&nbsp;Scholar</span>
                   <svg class="svg-icon" width="32" height="32">
@@ -95,11 +101,11 @@
         <h2>About Me</h2>
         I am a PhD student in the <a href="https://niessnerlab.org/" target="_blank">Visual Computing & Artificial Intelligence Group</a> at the Technical University of Munich, supervised by <a href="https://niessnerlab.org/members/matthias_niessner/profile.html" target="_blank">Prof. Matthias Nießner</a>.
         <br /><br />
-        I am the builder and maintainer of the <a href="https://tobias-kirschstein.github.io/nersemble/" target="_blank">NeRSemble dataset</a>, for which I built a custom multi-view setup with 16 video cameras and recorded facial expressions of over 250 individuals.
+        I am the creater and maintainer of the <a href="https://tobias-kirschstein.github.io/nersemble/" target="_blank">NeRSemble dataset</a>, for which I built a custom multi-view setup with 16 video cameras and recorded facial expressions of over 250 individuals.
         Since its release, the dataset has enabled various research projects around 3D head avatars.<a data-target="modal-nersemble-citations" class="js-modal-trigger"><sup>1</sup></a>
         <br /><br />
         Before starting my PhD, I completed a M.Sc. degree in Informatics at TU Munich with my Master’s Thesis focusing on Neural Rendering for novel-view synthesis on outdoor scenes using sparse point clouds.
-        I obtained a B.Sc. degree in both Mathematics and Computer Science at the University of Passau where I studied how Deep Learning can be used for emotion recognition from physiological signals under the supervision of <a href="http://www.schuller.one/" target="_blank">Prof. Björn Schuller</a>.
+        I obtained a B.Sc. degree in both Mathematics and Computer Science at the University of Passau, where I studied how Deep Learning can be used for emotion recognition from physiological signals under the supervision of <a href="http://www.schuller.one/" target="_blank">Prof. Björn Schuller</a>.
         <br /><br />
         My current research interests lie in Neural Rendering, 3D Scene Representations, Dynamic 3D Reconstruction and Animatable 3D Head Avatars.
       </div>
@@ -120,6 +126,7 @@
         <li><a href="https://yuelangx.github.io/gaussianheadavatar/" target="_blank">Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians</a></li>
         <li><a href="https://tobias-kirschstein.github.io/diffusion-avatars/" target="_blank"> Diffusion Avatars: Deferred Diffusion for High-fidelity 3D Head Avatars </a></li>
         <li><a href="https://shenhanqian.github.io/gaussian-avatars" target="_blank">GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians</a></li>
+        <li><a href="https://arxiv.org/pdf/2401.08398.pdf" target="_blank">High-Quality Mesh Blendshape Generation from Face Videos via Neural Inverse Rendering</a></li>
       </ul>
     </section>
     <footer class="modal-card-foot">
@@ -160,7 +167,7 @@
         <div class="column">
           
           
-          <h3 class="publication-title"> Diffusion Avatars: Deferred Diffusion for High-fidelity 3D Head Avatars</h3>
+          <h3 class="publication-title"> DiffusionAvatars: Deferred Diffusion for High-fidelity 3D Head Avatars</h3>
 
           
           <div class="publication-conference">arXiv 2023</div>
@@ -183,15 +190,15 @@ The underlying NPHM provides accurate control over facial expressions, while the
           
           <div class="publication-links">
             
-            <a href="https://tobias-kirschstein.github.io/diffusion-avatars/" target="_blank">Project</a>
+            <span class="publication-link"><a href="https://tobias-kirschstein.github.io/diffusion-avatars/" target="_blank">Project</a></span>
             
-            <a href="https://arxiv.org/pdf/2311.18635.pdf" target="_blank">Paper</a>
+            <span class="publication-link"><a href="https://arxiv.org/pdf/2311.18635.pdf" target="_blank">Paper</a></span>
             
-            <a href="https://youtu.be/nSjDiiTnp2E" target="_blank">Video</a>
+            <span class="publication-link"><a href="https://youtu.be/nSjDiiTnp2E" target="_blank">Video</a></span>
             
             
             
-            <a data-target="modal-bibtex-2024-diffusion-avatars" class="js-modal-trigger">Bibtex</a>
+            <span class="publication-link"><a data-target="modal-bibtex-2024-diffusion-avatars" class="js-modal-trigger">Bibtex</a></span>
             
           </div>
         </div>
@@ -269,15 +276,15 @@ GaussianAvatars can then be animated through expression transfer from a driving 
           
           <div class="publication-links">
             
-            <a href="https://shenhanqian.github.io/gaussian-avatars" target="_blank">Project</a>
+            <span class="publication-link"><a href="https://shenhanqian.github.io/gaussian-avatars" target="_blank">Project</a></span>
             
-            <a href="https://arxiv.org/pdf/2312.02069.pdf" target="_blank">Paper</a>
+            <span class="publication-link"><a href="https://arxiv.org/pdf/2312.02069.pdf" target="_blank">Paper</a></span>
             
-            <a href="https://www.youtube.com/watch?v=lVEY78RwU_I" target="_blank">Video</a>
+            <span class="publication-link"><a href="https://www.youtube.com/watch?v=lVEY78RwU_I" target="_blank">Video</a></span>
             
             
             
-            <a data-target="modal-bibtex-2024-gaussian-avatars" class="js-modal-trigger">Bibtex</a>
+            <span class="publication-link"><a data-target="modal-bibtex-2024-gaussian-avatars" class="js-modal-trigger">Bibtex</a></span>
             
           </div>
         </div>
@@ -354,15 +361,15 @@ Using MonoNPHM as a prior, we tackle the task of dynamic 3D head reconstruction 
           
           <div class="publication-links">
             
-            <a href="https://simongiebenhain.github.io/MonoNPHM/" target="_blank">Project</a>
+            <span class="publication-link"><a href="https://simongiebenhain.github.io/MonoNPHM/" target="_blank">Project</a></span>
             
-            <a href="https://simongiebenhain.github.io/MonoNPHM/static/MonoNPHM.pdf" target="_blank">Paper</a>
+            <span class="publication-link"><a href="https://simongiebenhain.github.io/MonoNPHM/static/MonoNPHM.pdf" target="_blank">Paper</a></span>
             
-            <a href="https://www.youtube.com/watch?v=n-wjaC3UIeE" target="_blank">Video</a>
+            <span class="publication-link"><a href="https://www.youtube.com/watch?v=n-wjaC3UIeE" target="_blank">Video</a></span>
             
             
             
-            <a data-target="modal-bibtex-2024-mono-nphm" class="js-modal-trigger">Bibtex</a>
+            <span class="publication-link"><a data-target="modal-bibtex-2024-mono-nphm" class="js-modal-trigger">Bibtex</a></span>
             
           </div>
         </div>
@@ -427,8 +434,8 @@ Using MonoNPHM as a prior, we tackle the task of dynamic 3D head reconstruction 
 
           
           <div class="publication-description">
-            <p>NeRSemble reconstructs high-fidelity dynamic-radiance fields of human heads.
-We combine a deformation for coarse movements with an ensemble of 3D multi-resolution hash encodings, which act as a form of expression dependent volumetric texture that models fine-grained, expression-dependent details.
+            <p>NeRSemble reconstructs high-fidelity dynamic radiance fields of human heads.
+We combine a deformation for coarse movements with an ensemble of 3D multi-resolution hash encodings. These act as a form of expression-dependent volumetric textures that model fine-grained, expression-dependent details.
 Additionally, we propose a new 16 camera multi-view capture dataset (7.1 MP resolution and 73 frames per second) containing 4700 sequences of more than 220 human subjects.</p>
 
           </div>
@@ -441,19 +448,19 @@ Additionally, we propose a new 16 camera multi-view capture dataset (7.1 MP reso
           
           <div class="publication-links">
             
-            <a href="https://tobias-kirschstein.github.io/nersemble/" target="_blank">Project</a>
+            <span class="publication-link"><a href="https://tobias-kirschstein.github.io/nersemble/" target="_blank">Project</a></span>
             
-            <a href="https://arxiv.org/pdf/2305.03027.pdf" target="_blank">Paper</a>
+            <span class="publication-link"><a href="https://arxiv.org/pdf/2305.03027.pdf" target="_blank">Paper</a></span>
             
-            <a href="https://youtu.be/a-OAWqBzldU" target="_blank">Video</a>
+            <span class="publication-link"><a href="https://youtu.be/a-OAWqBzldU" target="_blank">Video</a></span>
             
-            <a href="https://github.com/tobias-kirschstein/nersemble" target="_blank">Code</a>
+            <span class="publication-link"><a href="https://github.com/tobias-kirschstein/nersemble" target="_blank">Code</a></span>
             
-            <a href="https://forms.gle/rYRoGNh2ed51TDWX9" target="_blank">Dataset</a>
+            <span class="publication-link"><a href="https://forms.gle/rYRoGNh2ed51TDWX9" target="_blank">Dataset</a></span>
             
             
             
-            <a data-target="modal-bibtex-2023-nersemble" class="js-modal-trigger">Bibtex</a>
+            <span class="publication-link"><a data-target="modal-bibtex-2023-nersemble" class="js-modal-trigger">Bibtex</a></span>
             
           </div>
         </div>
@@ -528,9 +535,9 @@ Additionally, we propose a new 16 camera multi-view capture dataset (7.1 MP reso
 
           
           <div class="publication-description">
-            <p>NPHM is a field-based Neural parametric model for human heads, that represents identity geometry implicitly in a cononical space and models expressions as forward deformations.
-The SDF in canonical field is represented as an ensemble of local MLPs centered around facial anchor points.
-To train our model we capture a large dataset of complete head geometry containing over 250 people in 23 expressions each using high quality structured light scanners.</p>
+            <p>NPHM is a field-based neural parametric model for human heads, which represents identity geometry implicitly in a cononical space and models expressions as forward deformations.
+The SDF in canonical space is represented as an ensemble of local MLPs centered around facial anchor points.
+To train our model, we capture a large dataset of complete head geometry containing over 250 people in 23 expressions each, using high quality structured light scanners.</p>
 
           </div>
 
@@ -542,19 +549,19 @@ To train our model we capture a large dataset of complete head geometry containi
           
           <div class="publication-links">
             
-            <a href="https://simongiebenhain.github.io/NPHM/" target="_blank">Project</a>
+            <span class="publication-link"><a href="https://simongiebenhain.github.io/NPHM/" target="_blank">Project</a></span>
             
-            <a href="https://simongiebenhain.github.io/NPHM/static/NPHM.pdf" target="_blank">Paper</a>
+            <span class="publication-link"><a href="https://simongiebenhain.github.io/NPHM/static/NPHM.pdf" target="_blank">Paper</a></span>
             
-            <a href="https://www.youtube.com/watch?v=0mDk2tFOJCg" target="_blank">Video</a>
+            <span class="publication-link"><a href="https://www.youtube.com/watch?v=0mDk2tFOJCg" target="_blank">Video</a></span>
             
-            <a href="https://github.com/SimonGiebenhain/NPHM#learning-neural-parametric-head-models-nphm" target="_blank">Code</a>
+            <span class="publication-link"><a href="https://github.com/SimonGiebenhain/NPHM#learning-neural-parametric-head-models-nphm" target="_blank">Code</a></span>
             
-            <a href="https://forms.gle/66xWfAxzCvsoqcNZ8" target="_blank">Dataset</a>
+            <span class="publication-link"><a href="https://forms.gle/66xWfAxzCvsoqcNZ8" target="_blank">Dataset</a></span>
             
             
             
-            <a data-target="modal-bibtex-2023-nphm" class="js-modal-trigger">Bibtex</a>
+            <span class="publication-link"><a data-target="modal-bibtex-2023-nphm" class="js-modal-trigger">Bibtex</a></span>
             
           </div>
         </div>
@@ -627,19 +634,19 @@ To achieve this, we propose an extension to transformer architectures that can h
           
           <div class="publication-links">
             
-            <a href="https://arxiv.org/pdf/2103.11318.pdf" target="_blank">Paper</a>
+            <span class="publication-link"><a href="https://arxiv.org/pdf/2103.11318.pdf" target="_blank">Paper</a></span>
             
-            <a href="https://iclr.cc/virtual/2021/poster/2838" target="_blank">Video</a>
+            <span class="publication-link"><a href="https://iclr.cc/virtual/2021/poster/2838" target="_blank">Video</a></span>
             
-            <a href="https://github.com/danielzuegner/code-transformer" target="_blank">Code</a>
+            <span class="publication-link"><a href="https://github.com/danielzuegner/code-transformer" target="_blank">Code</a></span>
             
-            <a href="http://code-transformer.org/" target="_blank">Demo</a>
+            <span class="publication-link"><a href="http://code-transformer.org/" target="_blank">Demo</a></span>
             
-            <a href="https://iclr.cc/media/iclr-2021/Slides/2838.pdf" target="_blank">Slides</a>
+            <span class="publication-link"><a href="https://iclr.cc/media/iclr-2021/Slides/2838.pdf" target="_blank">Slides</a></span>
             
             
             
-            <a data-target="modal-bibtex-2021-code-transformer" class="js-modal-trigger">Bibtex</a>
+            <span class="publication-link"><a data-target="modal-bibtex-2021-code-transformer" class="js-modal-trigger">Bibtex</a></span>
             
           </div>
         </div>
@@ -717,11 +724,11 @@ Not only does a combination of convolutional layers and LSTMs perform better for
           
           <div class="publication-links">
             
-            <a href="https://opus.bibliothek.uni-augsburg.de/opus4/frontdoor/deliver/index/docId/71917/file/71917.pdf" target="_blank">Paper</a>
+            <span class="publication-link"><a href="https://opus.bibliothek.uni-augsburg.de/opus4/frontdoor/deliver/index/docId/71917/file/71917.pdf" target="_blank">Paper</a></span>
             
             
             
-            <a data-target="modal-bibtex-2017-emotion-recognition" class="js-modal-trigger">Bibtex</a>
+            <span class="publication-link"><a data-target="modal-bibtex-2017-emotion-recognition" class="js-modal-trigger">Bibtex</a></span>
             
           </div>
         </div>
@@ -804,7 +811,7 @@ Not only does a combination of convolutional layers and LSTMs perform better for
             
             <li>Multi-view Stereo via Inverse Rendering</li>
             
-            <li>Synthetic Hair Reconstruction</li>
+            <li>Synthetic 3D Hair Reconstruction</li>
             
           </ul>
         </div>
@@ -841,7 +848,7 @@ Not only does a combination of convolutional layers and LSTMs perform better for
             
             <li>Reconstructing surfaces with NeuS and Deep Marching Tetrahedra</li>
             
-            <li>Multi-view Hair Reconstruction</li>
+            <li>Multi-view 3D Hair Reconstruction</li>
             
           </ul>
         </div>
@@ -863,7 +870,7 @@ Not only does a combination of convolutional layers and LSTMs perform better for
       
       
       
-      <div class="review columns is-centered">
+      <div class="review columns is-centered is-mobile">
         <div class="column is-half-desktop">
           
           <h3 class="review-title has-text-centered">
@@ -872,7 +879,7 @@ Not only does a combination of convolutional layers and LSTMs perform better for
           <div class="reviewing-conference-name has-text-centered">IEEE/CVF Computer Vision and Pattern Recognition Conference</div>
 
           
-          <div class="columns is-centered">
+          <div class="columns is-centered is-mobile">
             <ul class="reviews column is-half">
               
               <li>2024: 4 papers</li>
@@ -890,7 +897,7 @@ Not only does a combination of convolutional layers and LSTMs perform better for
 
   </main>
   <footer>
-    <p>&copy; 2023 Tobias Kirschstein</p>
+    <p>&copy; 2024 Tobias Kirschstein</p>
 
   </footer>
 </body>
