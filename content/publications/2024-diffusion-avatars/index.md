@@ -1,6 +1,6 @@
 +++
 title = ' DiffusionAvatars: Deferred Diffusion for High-fidelity 3D Head Avatars'
-conference = 'arXiv 2023'
+conference = 'CVPR 2024'
 date = 2024-06-03
 authors = [ 'Tobias Kirschstein', 'Simon Giebenhain', 'Matthias Nießner' ]
 cover1 = 'cover.jpg'

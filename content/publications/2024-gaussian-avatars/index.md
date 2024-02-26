@@ -1,6 +1,6 @@
 +++
 title = 'GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians'
-conference = 'arXiv 2023'
+conference = 'CVPR 2024'
 date = 2024-06-01
 authors = [ 'Shenhan Qian', 'Tobias Kirschstein', 'Liam Schoneveld', 'Davide Davoli', 'Simon Giebenhain', 'Matthias Nießner' ]
 cover1 = 'cover.jpg'

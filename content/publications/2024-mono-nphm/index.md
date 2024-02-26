@@ -1,6 +1,6 @@
 +++
 title = 'MonoNPHM: Dynamic Head Reconstruction from Monoculuar Videos'
-conference = 'arXiv 2023'
+conference = 'CVPR 2024'
 date = 2024-06-01
 authors = [ 'Simon Giebenhain', 'Tobias Kirschstein', 'Markos Georgopoulos', 'Martin Rünz', 'Lourdes Agapito', 'Matthias Nießner']
 cover1 = 'cover.jpg'
