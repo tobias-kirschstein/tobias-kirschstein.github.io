@@ -6,6 +6,7 @@ authors = [ 'Shenhan Qian', 'Tobias Kirschstein', 'Liam Schoneveld', 'Davide Dav
 cover1 = 'cover.jpg'
 cover2 = 'cover.mp4'
 bibtex = 'qian2023gaussianavatars.bib'
+bonus = 'Highlight'
 
 [[links]]
 name = 'Project'

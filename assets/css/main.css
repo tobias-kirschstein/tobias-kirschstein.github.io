@@ -286,6 +286,11 @@ div.publication {
     color: #0065bd;
 }
 
+.publication-conference .bonus {
+    font-weight: bold;
+    color: #EF2D56;
+}
+
 /**
  * ------------
  * Description

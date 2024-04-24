@@ -6,6 +6,7 @@ authors = [ 'Simon Giebenhain', 'Tobias Kirschstein', 'Markos Georgopoulos', 'Ma
 cover1 = 'cover.jpg'
 cover2 = 'cover.mp4'
 bibtex = 'giebenhain2023mononphm.bib'
+bonus = 'Highlight'
 
 [[links]]
 name = 'Project'

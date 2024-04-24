@@ -34,7 +34,7 @@
           <h3 class="publication-title">{{.Title}}</h3>
 
           <!--  Conference  -->
-          <div class="publication-conference">{{.Params.Conference}}</div>
+          <div class="publication-conference">{{.Params.Conference}}{{ if .Params.Bonus }} <span class="bonus">({{ .Params.Bonus }})</span>{{ end }}</div>
 
 <!--                                  {{jsonify (dict "indent" " ") .}}-->
 

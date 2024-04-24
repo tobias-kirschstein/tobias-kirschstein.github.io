@@ -5,7 +5,7 @@ date = 2024-06-03
 authors = [ 'Tobias Kirschstein', 'Simon Giebenhain', 'Matthias Nießner' ]
 cover1 = 'cover.jpg'
 cover2 = 'cover.mp4'
-bibtex = 'kirschstein2023diffusionavatars.bib'
+bibtex = 'kirschstein2024diffusionavatars.bib'
 
 [[links]]
 name = 'Project'
