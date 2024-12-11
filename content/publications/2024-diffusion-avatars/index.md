@@ -18,6 +18,10 @@ url = 'https://arxiv.org/pdf/2311.18635.pdf'
 [[links]]
 name = 'Video'
 url = 'https://youtu.be/nSjDiiTnp2E'
+
+[[links]]
+name = 'Code'
+url = 'https://github.com/tobias-kirschstein/diffusion-avatars'
 +++
 
 DiffusionAvatar uses diffusion-based, deferred neural rendering to translate geometric cues from an underlying neural parametric head model (NPHM) to photo-realistic renderings.

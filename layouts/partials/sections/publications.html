@@ -14,10 +14,10 @@
       {{ $slug := index (last 1 .SectionsEntries) 0 }}
       <div class="publication columns">
 
-        <div class="column is-4">
+        <div class="column is-4 publication-cover-column">
           <!--  Left  -->
           <!--  Visuals  -->
-          <div class="publication-cover">
+          <div class="publication-cover" style="width: {{ if .Params.width }}{{ .Params.width}}{{else}}100%{{ end }}">
             <img src="/{{ .SectionsPath }}/{{ .Params.Cover1}}" class="{{ if .Params.Cover2 }}hover-1{{else}}hover-single{{ end }}"/>
             {{ if .Params.Cover2 }}
             <video autoplay="" loop="" muted="" playsinline="" class="hover-2" >

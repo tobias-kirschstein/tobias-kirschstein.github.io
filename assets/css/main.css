@@ -232,9 +232,14 @@ div.publication {
  * ------------
  */
 
+.publication-cover-column {
+    text-align: center;
+}
+
 .publication-cover {
     position: relative;
     overflow: hidden;
+    display: inline-block;
 }
 
 .publication-cover .hover-1 {
