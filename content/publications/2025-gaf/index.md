@@ -1,7 +1,7 @@
 +++
 title = 'GAF: Gaussian Avatar Reconstruction from Monocular Videos via Multi-view Diffusion'
 conference = 'CVPR 2025'
-date = 2025-06-01
+date = 2025-02-01
 authors = [ 'Jiapeng Tang', 'Davide Davoli', 'Tobias Kirschstein', 'Liam Schoneveld', 'Matthias Niessner' ]
 cover1 = 'cover.jpg'
 cover2 = 'cover.mp4'
