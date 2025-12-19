@@ -22,7 +22,7 @@
           <div class="columns is-centered is-mobile">
             <ul class="reviews column is-half">
               {{ range $index, $element := .Params.Reviews }}
-              <li>{{.year}}: {{.text}}</li>
+              <li>{{.year}}: {{.text}}{{if .extra}} <span class="reviews-extra">({{.extra}})</span>{{end}}</li>
               {{ end }}
             </ul>
           </div>

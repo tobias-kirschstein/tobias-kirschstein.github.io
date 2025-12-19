@@ -425,6 +425,17 @@ div.publication {
 
 /**
  * ============
+ * Reviewing
+ * ============
+ */
+
+.reviews-extra {
+    color: #ffab00;
+    font-weight: bold;
+}
+
+/**
+ * ============
  * hr
  * ============
  */
