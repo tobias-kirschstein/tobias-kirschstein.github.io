@@ -8,10 +8,14 @@
   </div>
   <div class="container">
     <div class="publications">
+      {{ $previousYear := 3000}}
       {{ with site.GetPage "publications" }}
       <!--    {{jsonify (dict "indent" " ") (.Resources.ByType "page")}}-->
       {{ range sort (.Resources.ByType "page") "Date" "desc" }}
       {{ $slug := index (last 1 .SectionsEntries) 0 }}
+      {{ $year := .Date.Year}}
+      {{ if compare.Lt $year $previousYear }}<div class="container"><div class="hr hr-year-container"><div class="publication-year-container"><div class="publication-year-header">{{$year }}</div></div><div class="tk"></div></div></div>{{ end }}
+      {{ $previousYear = $year }}
       <div class="publication columns">
 
         <div class="column is-4 publication-cover-column">
