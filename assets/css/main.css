@@ -353,11 +353,11 @@ div.publication {
  * ------------
  */
 
-.publication-links {
+.publication-links, .fancy-button-list {
     margin-left: -5px;
 }
 
-.publication-link {
+.publication-link, .fancy-button {
     display: inline-block;
     margin-bottom: 5px;
     margin-right: 10px;
@@ -365,7 +365,7 @@ div.publication {
     filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
 }
 
-.publication-links a {
+.publication-links a, .fancy-button a {
     position: relative;
     display: inline-block;
     height: 30px;
@@ -410,18 +410,44 @@ div.publication {
 /*    background-color: white;*/
 /*}*/
 
-.publication-link:hover a {
+.publication-link:hover a, .fancy-button:hover a {
     /*background-color: #000;*/
     background-color: #F06D89;
     color: #000;
 }
 
-.publication-link:hover:before {
+.publication-link:hover:before, .fancy-button:hover:before {
     /*border-right-color: #000;*/
     border-right-color: #F06D89;
 }
 
-.publication-link:hover:after {
+.publication-link:hover:after, .fancy-button:hover:after {
+    /*border-left-color: #000;*/
+    border-left-color: #F06D89;
+}
+
+/**
+ * -------------------
+ * Publication Filters
+ * -------------------
+ */
+
+.publications-filter {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.publication-filter.active a {
+    background-color: #F06D89;
+    color: #000;
+}
+
+.publication-filter.active:before {
+    border-right-color: #F06D89;
+}
+
+.publication-filter.active:after {
     /*border-left-color: #000;*/
     border-left-color: #F06D89;
 }

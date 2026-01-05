@@ -5,8 +5,11 @@
   </div>
   <div class="container">
     <h2 class="section-header">Publications</h2>
-  </div>
-  <div class="container">
+    <div id="publications-filter" class="publications-filter fancy-button-list is-center">
+      <span class="fancy-button publication-filter active"><a href="" onclick="return filterPublications(this, function(publication) { return true; })">All</a></span>
+      <span class="fancy-button publication-filter"><a href="" onclick="return filterPublications(this, function(publication) { return publication.isFirstAuthor; })">First-author</a></span>
+      <span class="fancy-button publication-filter"><a href="" onclick="return filterPublications(this, function(publication) { return publication.isLastAuthor; })">Last-author</a></span>
+    </div>
     <div class="publications">
       {{ $previousYear := 3000}}
       {{ with site.GetPage "publications" }}
@@ -16,7 +19,7 @@
       {{ $year := .Date.Year}}
       {{ if compare.Lt $year $previousYear }}<div class="container"><div class="hr hr-year-container"><div class="publication-year-container"><div class="publication-year-header">{{$year }}</div></div><div class="tk"></div></div></div>{{ end }}
       {{ $previousYear = $year }}
-      <div class="publication columns">
+      <div id="publication-{{ $slug }}" class="publication columns">
 
         <div class="column is-4 publication-cover-column">
           <!--  Left  -->
@@ -93,3 +96,44 @@
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+class TKPublication {
+  constructor(elementId, isFirstAuthor, isLastAuthor) {
+    this.elementId = elementId;
+    this.isFirstAuthor = isFirstAuthor;
+    this.isLastAuthor = isLastAuthor;
+  }
+}
+var tkPublications = [
+  {{ with site.GetPage "publications" }}
+  {{ range (.Resources.ByType "page") }}
+    {{ $slug := index (last 1 .SectionsEntries) 0 }}
+    {{ $firstAuthor := index .Params.Authors 0}}
+    {{ $lastAuthor := index (last 1 .Params.Authors) 0}}
+    {{ $isFirstAuthor := eq $firstAuthor "Tobias Kirschstein"}}
+    {{ $isLastAuthor := eq $lastAuthor "Tobias Kirschstein"}}
+    new TKPublication("publication-{{ $slug }}", {{ $isFirstAuthor }}, {{ $isLastAuthor }}),
+  {{ end }}
+  {{ end }}
+];
+
+function filterPublications(filterButton, publicationCriterion) {
+  var filterButtons = document.getElementById("publications-filter").querySelectorAll('span');
+  for (const otherButton of filterButtons) {
+    otherButton.classList.remove('active');
+  }
+  filterButton.parentNode.classList.add('active');
+
+  for (const publication of tkPublications) {
+    var show = publicationCriterion(publication);
+    var publicationContainer = document.getElementById(publication.elementId);
+    if (show) {
+      publicationContainer.style.display = '';
+    } else {
+      publicationContainer.style.display = 'none';
+    }
+  }
+  return false;
+}
+</script>
