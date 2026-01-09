@@ -7,8 +7,8 @@
     <h2 class="section-header">Publications</h2>
     <div id="publications-filter" class="publications-filter fancy-button-list is-center">
       <span class="fancy-button publication-filter active"><a href="" onclick="return filterPublications(this, function(publication) { return true; })">All</a></span>
-      <span class="fancy-button publication-filter"><a href="" onclick="return filterPublications(this, function(publication) { return publication.isFirstAuthor; })">First-author</a></span>
-      <span class="fancy-button publication-filter"><a href="" onclick="return filterPublications(this, function(publication) { return publication.isLastAuthor; })">Last-author</a></span>
+      <span class="fancy-button publication-filter"><a href="" onclick="return filterPublications(this, function(publication) { return publication.isFirstAuthor; })">As lead author</a></span>
+      <span class="fancy-button publication-filter"><a href="" onclick="return filterPublications(this, function(publication) { return publication.isLastAuthor; })">As supervisor</a></span>
     </div>
     <div class="publications">
       {{ $previousYear := 3000}}
