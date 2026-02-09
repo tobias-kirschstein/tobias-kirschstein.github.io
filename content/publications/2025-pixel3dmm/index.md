@@ -1,6 +1,6 @@
 +++
 title = 'Pixel3DMM: Versatile Screen-Space Priors for Single-Image 3D Face Reconstruction'
-conference = 'arXiv 2025'
+conference = 'ICLR 2026'
 date = 2025-05-01
 authors = [ 'Simon Giebenhain', 'Tobias Kirschstein', 'Martin Rünz', 'Lourdes Agapito', 'Matthias Nießner']
 cover1 = 'cover.jpg'
