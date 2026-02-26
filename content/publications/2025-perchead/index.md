@@ -1,6 +1,6 @@
 +++
 title = 'PercHead: Perceptual Head Model for Single-Image 3D Head Reconstruction & Editing'
-conference = 'arXiv 2025'
+conference = 'CVPR 2026'
 date = 2025-11-01
 authors = [ 'Antonio Oroz', 'Matthias Nießner', 'Tobias Kirschstein' ]
 cover1 = 'cover.jpg'
