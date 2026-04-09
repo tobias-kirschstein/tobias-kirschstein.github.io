@@ -6,6 +6,7 @@ authors = [ 'Antonio Oroz', 'Matthias Nießner', 'Tobias Kirschstein' ]
 cover1 = 'cover.jpg'
 cover2 = 'cover.mp4'
 bibtex = 'oroz2025perchead.bib'
+bonus = 'Highlight'
 
 [[links]]
 name = 'Project'
