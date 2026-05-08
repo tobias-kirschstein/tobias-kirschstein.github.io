@@ -1,7 +1,7 @@
 +++
 title = 'FlexAvatar: Learning Complete 3D Head Avatars with Partial Supervision'
 conference = 'CVPR 2026'
-date = 2025-12-01
+date = 2026-06-02
 authors = [ 'Tobias Kirschstein', 'Simon Giebenhain', 'Matthias Nießner']
 cover1 = 'cover.jpg'
 cover2 = 'cover.mp4'
