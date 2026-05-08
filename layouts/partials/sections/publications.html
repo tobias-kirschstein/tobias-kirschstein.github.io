@@ -19,6 +19,7 @@
       {{ $year := .Date.Year}}
       {{ if compare.Lt $year $previousYear }}<div class="container"><div class="hr hr-year-container"><div class="publication-year-container"><div class="publication-year-header">{{$year }}</div></div><div class="tk"></div></div></div>{{ end }}
       {{ $previousYear = $year }}
+      {{ $sectionsPath := .SectionsPath}}
       <div id="publication-{{ $slug }}" class="publication columns">
 
         <div class="column is-4 publication-cover-column">
@@ -59,7 +60,11 @@
           <!--  Links  -->
           <div class="publication-links">
             {{ range $index, $element := .Params.Links }}
-            <span class="publication-link"><a href="{{.url}}" target="_blank">{{.name}}</a></span>
+            {{ $url_absolute := .url }}
+            {{ if .relative}}
+              {{ $url_absolute = $url_absolute | printf "%s/%s" $sectionsPath | printf "%s"}}
+            {{ end }}
+            <span class="publication-link"><a href="{{$url_absolute}}" target="_blank">{{.name}}</a></span>
             {{ end }}
             <!--  BibTeX  -->
             {{ if .Params.Bibtex }}

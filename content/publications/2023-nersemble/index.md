@@ -16,6 +16,11 @@ name = 'Paper'
 url = 'https://arxiv.org/pdf/2305.03027.pdf'
 
 [[links]]
+name = 'Poster'
+url = 'Poster_NeRSemble.pdf'
+relative = true
+
+[[links]]
 name = 'Video'
 url = 'https://youtu.be/a-OAWqBzldU'
 

@@ -16,6 +16,11 @@ name = 'Paper'
 url = 'https://arxiv.org/pdf/2311.18635.pdf'
 
 [[links]]
+name = 'Poster'
+url = 'Poster_DiffusionAvatars.pdf'
+relative = true
+
+[[links]]
 name = 'Video'
 url = 'https://youtu.be/nSjDiiTnp2E'
 
