@@ -13,4 +13,5 @@ text = '4 papers'
 [[reviews]]
 year = 2026
 text = '4 papers'
+extra = 'Outstanding Reviewer'
 +++
