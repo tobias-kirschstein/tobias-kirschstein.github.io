@@ -19,6 +19,10 @@ url = 'https://simongiebenhain.github.io/MonoNPHM/static/MonoNPHM.pdf'
 [[links]]
 name = 'Video'
 url = 'https://www.youtube.com/watch?v=n-wjaC3UIeE'
+
+[[links]]
+name = 'Code'
+url = 'https://github.com/SimonGiebenhain/MonoNPHM'
 +++
 
 MonoNPHM is a neural parametric head model that disentangles geomery, appearance and facial expression into three separate latent spaces.

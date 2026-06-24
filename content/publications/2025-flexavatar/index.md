@@ -23,6 +23,10 @@ relative = true
 [[links]]
 name = 'Video'
 url = 'https://youtu.be/g8wxqYBlRGY'
+
+[[links]]
+name = 'Code'
+url = 'https://github.com/tobias-kirschstein/flexavatar'
 +++
 
 FlexAvatar creates high-quality and complete 3D head avatars from as few as a single input image. Creating a new avatar only takes 2 minutes and the result can be animated and viewed in real-time. To achieve effective joint training on both monocular and multi-view video datasets, we introduce bias sinks. These are learnable tokens that indicate from which dataset a training sample comes from. During inference, we always use the multi-view token. This design combines the generalizability from monocular data and the completeness of multi-view data.  

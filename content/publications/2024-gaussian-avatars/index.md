@@ -19,6 +19,10 @@ url = 'https://arxiv.org/pdf/2312.02069.pdf'
 [[links]]
 name = 'Video'
 url = 'https://www.youtube.com/watch?v=lVEY78RwU_I'
+
+[[links]]
+name = 'Code'
+url = 'https://github.com/ShenhanQian/GaussianAvatars'
 +++
 
 GaussianAvatars rigs 3D Gaussians to a parametric mesh model for photorealistic avatar creation and animation.
