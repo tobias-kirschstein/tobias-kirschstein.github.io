@@ -1,7 +1,7 @@
 +++
 title = 'Pix2NPHM: Learning to Regress NPHM Reconstructions From a Single Image'
-conference = 'arXiv 2025'
-date = 2025-11-01
+conference = 'ECCV 2026'
+date = 2026-08-01
 authors = [ 'Simon Giebenhain', 'Tobias Kirschstein', 'Liam Schoneveld', 'Davide Davoli', 'Zhe Chen', 'Matthias Nießner' ]
 cover1 = 'cover.jpg'
 cover2 = 'cover.mp4'
